@@ -28,7 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="ConfigurationModels\"/>
         <Folder Include="Providers\"/>
     </ItemGroup>
 

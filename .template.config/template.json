@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Lucas e Wallace",
+  "classifications": ["Solution"],
+  "identity": "SesTemplate",
+  "name": "Template de Solução SES",
+  "shortName": "ses-sln",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "SesTemplate",
+  "preferNameDirectory": true
+}

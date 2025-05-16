@@ -23,7 +23,6 @@
         <Folder Include="EntityMaps\"/>
         <Folder Include="Migrations\"/>
         <Folder Include="SqlFiles\"/>
-        <Folder Include="UnityOfWorks\"/>
     </ItemGroup>
 
     <ItemGroup>

@@ -1,10 +1,15 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RhbkSdk.Configurations;
+using RhbkSdk.Extensions;
 using SesTemplate.Aplication.Services;
 using SesTemplate.Application.Contracts;
 using SesTemplate.Domain;
+using SesTemplate.Infra.CrossCutting.ConfigurationModels;
 using SesTemplate.Infra.Data;
+using SesTemplate.Infra.Data.Contexts;
 
 namespace SesTemplate.IoC;
 
@@ -16,12 +21,27 @@ public static class IoCManager
         IHostEnvironment hostingEnvironment)
     {
         return services
+                .AddApplicationDbContext(configuration)
                 .AddDomainRepositories()
                 .AddAutoMapper()
                 .AddApplicationServices()
+                .AddRhbkSdk(configuration)
             ;
     }
     
+    public static IServiceCollection AddApplicationDbContext(this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        DatabaseConfigure dbconfig = new DatabaseConfigure();
+        configuration.GetSection(DatabaseConfigure.ConnectionStringsSection).Bind(dbconfig);
+
+        services.AddDbContext<AppDbContext>(optionsAction =>
+        {
+            optionsAction.UseSqlServer(dbconfig.ConnectionStrings);
+            //optionsAction.UseSqlite("Data Source=db.db");
+        });
+        return services;
+    }
     
     public static IServiceCollection AddDomainRepositories(this IServiceCollection services)
     {
@@ -39,6 +59,12 @@ public static class IoCManager
     {
         services.AddAutoMapper(typeof(IApplicationServices));
         return services;
+    }
+
+    public static IServiceCollection AddRhbkSdk(this IServiceCollection services, IConfiguration configuration)
+    {
+        RhbkConfiguration config = configuration.GetSection(RhbkConfiguration.ConfigurationSection).Get<RhbkConfiguration>()!;
+        return services.AddRhbkClient(config.KeycloakBaseUrl, ServiceLifetime.Scoped);
     }
     
     #region "Private Methods"
