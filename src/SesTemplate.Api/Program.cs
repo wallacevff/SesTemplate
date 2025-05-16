@@ -1,4 +1,5 @@
 using SesTemplate.Api.Extensions;
+using SesTemplate.Api.Factories;
 
 var app = WebApplicationBuilderFactory.CreateWebApplication(args);
 app.UseCors();
