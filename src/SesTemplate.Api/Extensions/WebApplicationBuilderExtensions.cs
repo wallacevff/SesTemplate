@@ -12,7 +12,7 @@ public static class WebApplicationBuilderExtensions
     {
         builder.Services.AddSwaggerGen(options =>
             {
-                var projectTitle = builder.Configuration["ProjectInfo:Title"] ?? "Default API";
+                var projectTitle = builder.Configuration["ProjectInfo:Title"] ?? "SesTemplateApi";
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = projectTitle,
