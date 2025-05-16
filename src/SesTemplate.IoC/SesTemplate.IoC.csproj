@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+  
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\SesTemplate.Aplication.Services\SesTemplate.Aplication.Services.csproj" />
+        <ProjectReference Include="..\..\SesTemplate.Domain\SesTemplate.Domain.csproj" />
+        <ProjectReference Include="..\SesTemplate.Infra.CrossCutting\SesTemplate.Infra.CrossCutting.csproj"/>
+        <ProjectReference Include="..\SesTemplate.Infra.Data\SesTemplate.Infra.Data.csproj" />
+    </ItemGroup>
+
+</Project>

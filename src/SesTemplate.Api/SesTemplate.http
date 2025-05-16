@@ -1,0 +1,6 @@
+@SesTemplate_HostAddress = http://localhost:5183
+
+GET {{SesTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

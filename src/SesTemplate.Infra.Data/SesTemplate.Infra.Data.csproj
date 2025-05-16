@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="LinqKit.Core" Version="1.2.7"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.13"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="EntityMaps\"/>
+        <Folder Include="Migrations\"/>
+        <Folder Include="SqlFiles\"/>
+        <Folder Include="UnityOfWorks\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\SesTemplate.Domain\SesTemplate.Domain.csproj" />
+      <ProjectReference Include="..\SesTemplate.Domain.Shared\SesTemplate.Domain.Shared.csproj" />
+      <ProjectReference Include="..\SesTemplate.Infra.CrossCutting\SesTemplate.Infra.CrossCutting.csproj" />
+    </ItemGroup>
+
+</Project>
