@@ -14,9 +14,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Application.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Domain.Shared", "src\SesTemplate.Domain.Shared\SesTemplate.Domain.Shared.csproj", "{5C014F9F-F754-4311-BF57-054D52839DA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Domain", "SesTemplate.Domain\SesTemplate.Domain.csproj", "{8788179F-83E2-442A-866D-DF9EF82640ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Domain", "src\SesTemplate.Domain\SesTemplate.Domain.csproj", "{8788179F-83E2-442A-866D-DF9EF82640ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Aplication.Services", "SesTemplate.Aplication.Services\SesTemplate.Aplication.Services.csproj", "{47DE596D-2AB6-4AD6-A1DA-B46AB74B6B8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Aplication.Services", "src\SesTemplate.Aplication.Services\SesTemplate.Aplication.Services.csproj", "{47DE596D-2AB6-4AD6-A1DA-B46AB74B6B8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Infra.Data", "src\SesTemplate.Infra.Data\SesTemplate.Infra.Data.csproj", "{3F42AFFE-0B0A-4775-81CD-C04C42927033}"
 EndProject

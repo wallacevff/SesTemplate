@@ -11,11 +11,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\SesTemplate.Domain.Shared\SesTemplate.Domain.Shared.csproj" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+      <ProjectReference Include="..\SesTemplate.Domain.Shared\SesTemplate.Domain.Shared.csproj" />
     </ItemGroup>
 
 </Project>

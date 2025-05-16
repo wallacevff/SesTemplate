@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\SesTemplate.Domain\SesTemplate.Domain.csproj" />
+      <ProjectReference Include="..\SesTemplate.Domain\SesTemplate.Domain.csproj" />
       <ProjectReference Include="..\SesTemplate.Domain.Shared\SesTemplate.Domain.Shared.csproj" />
       <ProjectReference Include="..\SesTemplate.Infra.CrossCutting\SesTemplate.Infra.CrossCutting.csproj" />
     </ItemGroup>

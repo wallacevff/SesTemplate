@@ -13,11 +13,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\SesTemplate.Application.Contracts\SesTemplate.Application.Contracts.csproj" />
-      <ProjectReference Include="..\src\SesTemplate.Infra.Data\SesTemplate.Infra.Data.csproj" />
+      <Content Remove="..\..\..\.nuget\packages\rhbksdk\8.2.0\contentFiles\any\net8.0\Microsoft.AspNetCore.dll" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Remove="..\..\..\.nuget\packages\rhbksdk\8.2.0\contentFiles\any\net8.0\Microsoft.AspNetCore.dll" />
+      <ProjectReference Include="..\SesTemplate.Application.Contracts\SesTemplate.Application.Contracts.csproj" />
+      <ProjectReference Include="..\SesTemplate.Infra.Data\SesTemplate.Infra.Data.csproj" />
     </ItemGroup>
 </Project>
