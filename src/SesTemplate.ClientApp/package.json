@@ -6,8 +6,7 @@
     "start": "ng serve --port 4200",
     "build": "ng build --configuration=production --delete-output-path --output-path dist --progress --aot --output-hashing all",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:talonario-Front": "node dist/talonario-front/server/server.mjs"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -15,19 +14,19 @@
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
     "@angular/forms": "^19.2.0",
+    "@angular/material": "^19.0.0",
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
-    "@angular/material": "^19.0.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0",
-    "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
     "ngx-mask": "^18.0.4",
     "ngx-spinner": "^19.0.0",
     "ngx-toastr": "^19.0.0",
-    "uuid": "^11.0.5"
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "uuid": "^11.0.5",
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.2.0",
