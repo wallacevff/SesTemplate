@@ -5,6 +5,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C59B6A8B-1FE4-4FC0-ADA5-F5D8FB22DFF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{DF4986D9-F39C-4898-996F-02BE379BAD86}"
+	ProjectSection(SolutionItems) = preProject
+		docs\commands.md = docs\commands.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SesTemplate.Infra.CrossCutting", "src\SesTemplate.Infra.CrossCutting\SesTemplate.Infra.CrossCutting.csproj", "{B965CE35-2ABA-4BE6-8CDA-412F16F1A974}"
 EndProject
