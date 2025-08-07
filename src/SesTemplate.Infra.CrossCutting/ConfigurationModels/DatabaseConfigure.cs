@@ -1,4 +1,6 @@
-﻿namespace SesTemplate.Infra.CrossCutting.ConfigurationModels;
+﻿using Microsoft.Extensions.Configuration;
+
+namespace SesTemplate.Infra.CrossCutting.ConfigurationModels;
 
 public class DatabaseConfigure
 {

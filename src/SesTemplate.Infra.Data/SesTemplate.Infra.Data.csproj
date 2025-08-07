@@ -8,11 +8,11 @@
 
 
     <ItemGroup>
-        <PackageReference Include="LinqKit.Core" Version="1.2.7"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.13"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.0"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0"/>
+        <PackageReference Include="LinqKit.Core" Version="1.2.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.13" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,9 +20,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="EntityMaps\"/>
-        <Folder Include="Migrations\"/>
-        <Folder Include="SqlFiles\"/>
+        <Folder Include="EntityMaps\" />
+        <Folder Include="Migrations\" />
+        <Folder Include="SqlFiles\" />
     </ItemGroup>
 
     <ItemGroup>

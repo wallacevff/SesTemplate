@@ -1,4 +1,7 @@
-﻿namespace SesTemplate.Infra.CrossCutting.Providers;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+
+namespace SesTemplate.Infra.CrossCutting.Providers;
 
 public static class CustomConfigurationProvider
 {
