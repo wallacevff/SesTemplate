@@ -1,7 +1,7 @@
 @echo off
 echo Limpando pastas bin, obj e node_modules...
 
-for /d /r %%d in (bin, obj, node_modules) do (
+for /d /r %%d in (bin, obj, node_modules, .vs, .idea) do (
     if exist "%%d" (
         echo Excluindo: %%d
         rmdir /s /q "%%d"
