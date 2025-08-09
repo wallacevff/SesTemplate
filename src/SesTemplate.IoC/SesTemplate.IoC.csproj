@@ -12,7 +12,7 @@
         <ProjectReference Include="..\SesTemplate.Aplication.Services\SesTemplate.Aplication.Services.csproj" />
         <ProjectReference Include="..\SesTemplate.Application.Contracts\SesTemplate.Application.Contracts.csproj" />
         <ProjectReference Include="..\SesTemplate.Domain\SesTemplate.Domain.csproj" />
-        <ProjectReference Include="..\SesTemplate.Infra.CrossCutting\SesTemplate.Infra.CrossCutting.csproj"/>
+        <ProjectReference Include="..\SesTemplate.Infra.CrossCutting\SesTemplate.Infra.CrossCutting.csproj" />
         <ProjectReference Include="..\SesTemplate.Infra.Data\SesTemplate.Infra.Data.csproj" />
     </ItemGroup>
 
